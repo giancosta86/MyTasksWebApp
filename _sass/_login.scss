@@ -1,0 +1,64 @@
+.loginScreen {
+  padding: 1.5em;
+
+
+  h1 {
+    text-align: center;
+    font-size: 4em;
+    margin-top: 0;
+    color: midnightblue;
+  }
+
+
+  .loginBox {
+    font-size: 1.4em;
+
+    border-radius: 1em;
+
+    background: linear-gradient(to bottom right, lightskyblue, blue);
+
+    width: 30em;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 2.5em;
+
+    padding: 2em;
+
+    box-shadow: 10px 10px 5px #888888;
+
+    & > div {
+      padding: 1em;
+    }
+
+    label {
+      min-width: 6.5em;
+      display: inline-block;
+      color: mediumblue;
+      font-weight: bold;
+    }
+
+    input[type=text] {
+      box-shadow: 2px 2px 2px black;
+      background: palegreen;
+      color: darkgreen;
+      padding: 0.2em;
+    }
+
+    .loginButtonBox {
+      text-align: center;
+    }
+
+    .loginButton {
+      margin-top: 1em;
+      width: 8em;
+      height: 2.5em;
+      background: paleturquoise;
+
+      &[disabled] {
+        visibility: hidden;
+      }
+    }
+  }
+}

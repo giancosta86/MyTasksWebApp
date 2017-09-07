@@ -1,0 +1,122 @@
+.workArea {
+  .header {
+    background: linear-gradient(to bottom, darkblue, royalblue);
+    color: white;
+    padding: 1em;
+    margin-bottom: 4em;
+
+    h1 {
+      display: inline;
+      width: 10%;
+      margin-right: 2em;
+    }
+
+    .globalInfoBox {
+      display: inline-block;
+
+      .infoBox {
+        display: inline-block;
+        margin-right: 1em;
+
+        label {
+          margin-right: 0.4em;
+          font-weight: bold;
+        }
+      }
+    }
+
+    button {
+      background: royalblue;
+      padding: 0.4em;
+      border-radius: em;
+      margin-left: 0.8em;
+    }
+  }
+
+
+  .tasksArea {
+    padding: 1em;
+    font-size: 1.2em;
+
+    input[type=text] {
+      background: lightyellow;
+      color: black;
+      margin-right: 1em;
+      padding: 0.3em;
+    }
+
+
+    .newTaskBox {
+      .newTaskLabel {
+        display: inline-block;
+        width: 6.3em;
+        margin-right: 1em;
+        font-weight: bold;
+      }
+
+      .addButton {
+        padding: 0.4em;
+        background: springgreen;
+        color: darkgreen;
+        width: 6em;
+      }
+
+      margin-bottom: 4em;
+    }
+
+
+    .tasks {
+      list-style-type: none;
+
+      .task {
+        margin-bottom: 1em;
+
+        .doneField {
+          margin-right: 0.75em;
+        }
+
+        button {
+          margin-right: 1em;
+          padding: 0.4em;
+
+          &[disabled] {
+            visibility: hidden;
+          }
+        }
+
+        .removeButton {
+          background: lightcoral;
+          color: darkred;
+        }
+
+        .updateButton {
+          background: springgreen;
+          color: darkgreen;
+        }
+
+        .revertButton {
+          background: paleturquoise;
+          color: teal;
+        }
+      }
+    }
+  }
+
+  .footer {
+    margin-top: 2.5em;
+    background: linear-gradient(to bottom, darkblue, royalblue);
+    padding: 1em;
+    font-size: 1.3em;
+    color: white;
+    font-style: italic;
+    text-align: center;
+
+    a {
+      &:link,
+      &:visited {
+        color: white;
+        font-weight: bold;
+      }
+    }
+  }
+}
