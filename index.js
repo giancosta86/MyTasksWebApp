@@ -228,7 +228,7 @@ class LoginScreen extends React.Component {
 					</div>
 
 					<div>
-						<label for="password">Password:</label><input name="password" type="text" value={this.state.password} onChange={this.handleChange} />
+						<label for="password">Password:</label><input name="password" type="password" value={this.state.password} onChange={this.handleChange} />
 					</div>
 
 					<div className="loginButtonBox">
